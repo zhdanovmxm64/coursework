@@ -39,3 +39,15 @@ def test_description(class_fixture_1):
     assert class_fixture_1.description() == "Открытие вклада"
 
 
+def test_account_from(class_fixture_1):
+    assert class_fixture_1.account_from() == ""
+
+
+def test_account_from_2(class_fixture_2):
+    assert class_fixture_2.account_from() == "Maestro 7810846596785568"
+
+
+def test_account_to(class_fixture_1):
+    assert class_fixture_1.account_to() == "Счет 90424923579946435907"
+
+
