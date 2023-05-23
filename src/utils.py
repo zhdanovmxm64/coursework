@@ -2,7 +2,7 @@ import json
 import os
 
 path_to_data = os.path.abspath("../data")
-path_to_operations = os.path.join(path_to_data, "operations.json"))
+path_to_operations = os.path.join(path_to_data, "operations.json")
 
 def load_operations():
     """Загружает данные из файла и дабавляет в список все операции клиента """
