@@ -51,3 +51,17 @@ def test_account_to(class_fixture_1):
     assert class_fixture_1.account_to() == "Счет 90424923579946435907"
 
 
+def test_hide_number(class_fixture_1):
+    assert class_fixture_1.hide_number(class_fixture_1.account_from()) == "Внесение средств"
+
+
+def test_hide_number_1(class_fixture_1):
+    assert class_fixture_1.hide_number(class_fixture_1.account_to()) == "Счет **5907"
+
+
+def test_hide_number_2(class_fixture_2):
+    assert class_fixture_2.hide_number(class_fixture_2.account_from()) == "Maestro 7810 84** **** 5568"
+
+
+def test_amount(class_fixture_1):
+    assert class_fixture_1.amount() == "41096.24 USD"
